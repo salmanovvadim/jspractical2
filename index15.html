@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>exercise 2</title>             <!--page title area (Область названия страницы)-->
+    </head>
+
+    <body>
+ <!--Entering the tag <script> in the body of the page (Ввод в тело страницы тега <script>)-->
+      <script>
+        // variable input name, using operation prompt (ввод переменной имя, с использование операции prompt)
+        let name = prompt("Введите сюда своё имя", 'Введите имя');
+        /*displaying the value of the variable name obtained using the prompt operation (вывод значения переменной имя, полученной при помощи операции prompt)
+        */
+        document.write("Ваше имя " + name + ". Очень рады знакомству с Вами!!!<br>");
+
+        // variable input years, using operation prompt (ввод переменной лет, с использование операции prompt)
+        let years = prompt("Сколько Вам лет, если не секрет?", '35 лет');
+        // changing the data type of a variable (изменения типа данных переменной)
+        years = years - 1 + 11;
+        /*displaying the value of the variable years obtained using the prompt operation (вывод значения переменной лет, полученной при помощи операции prompt)
+          */
+        document.write("Через десять лет Вам исполниться " + years + " лет!");
+      </script>
+      
+      <script>
+        let start = confirm("Начать заново?");
+      </script>
+    </body>
+
+  </html>
