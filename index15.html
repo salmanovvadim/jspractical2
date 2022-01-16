@@ -18,10 +18,11 @@
 
         // variable input years, using operation prompt (ввод переменной лет, с использование операции prompt)
         let years = prompt("Сколько Вам лет, если не секрет?", '35 лет');
-        // changing the data type of a variable (изменения типа данных переменной)
-        years = years - 1 + 11;
+        // changing the data type of a variable and incrementing the value (изменения типа данных переменной и увиличение значения)
+        years = +years.replace(/[^0-9]/g,'') + 10;
         /*displaying the value of the variable years obtained using the prompt operation (вывод значения переменной лет, полученной при помощи операции prompt)
           */
+         
         document.write("Через десять лет Вам исполниться " + years + " лет!");
       </script>
       
